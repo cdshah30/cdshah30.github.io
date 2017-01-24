@@ -1,0 +1,66 @@
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} 
+.poem  {
+    font-size: 180%;
+    font-family: Helvetica;
+    font-weight: Bold;
+    color: #444444
+}
+
+.largefont {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+} 
+body {
+  font-family: Sans-Serif;
+}
+
+
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+}
+th, td {
+  padding: 0.25rem;
+  text-align: center;
+  border: 0px solid #ccc;
+}
+tbody tr:nth-child(odd) {
+  background: #bbb;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+h3 {
+    text-align: left;
+}
+
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
