@@ -1,0 +1,127 @@
+ /* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+h2 {
+    background-color: #f0f0f0;
+    color : #A4A400;
+    text-align : center;
+}
+caption {
+  background-color: #F0F0F0
+;
+  color: #A4A400
+;
+  font-weight: bold;
+}
+body {
+    background-color: #FFCC00;
+}
+body	{ background:url(background.jpg) ; background-attachment:fixed; }
+
+
+
+body {
+    font-size: 15px;
+ font-family: "Georgia";
+}
+#one{
+    font-family: Georgia, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    color :white ;
+}
+
+td ,th{
+    border: 3px  solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color : #CC9933;
+
+}
+th{
+    border: 1px 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color : #003366;
+
+}
+
+
+tr:nth-child(odd){
+    background-color: #dddddd;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+#two{
+    font-family: Georgia, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    color :white ;
+}
+
+td ,th{
+    border: 3px  solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color : #CC9933;
+
+}
+th{
+    border: 1px 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color : #003366;
+
+}
+
+
+tr:nth-child(odd){
+    background-color: #dddddd;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+h1 {
+    letter-spacing: 4px;
+}
+h2 {
+    letter-spacing: 4px;
+}
+h3 {
+    letter-spacing: 4px;
+}
+h4 {
+    letter-spacing: 4px;
+}
+h5 {
+    letter-spacing: 4px;
+}
