@@ -1,0 +1,146 @@
+ /* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+h2 {
+    background-color: #f0f0f0;
+    color : #A4A400;
+    text-align : center;
+}
+caption {
+  background-color: #F0F0F0
+;
+  color: #A4A400
+;
+  font-weight: bold;
+}
+body {
+    background-color: #FFCC00;
+}
+
+
+body {
+    font-size: 15px;
+ font-family: "Georgia";
+}
+#one{
+    font-family: Georgia, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    color :blue ;
+}
+
+td ,th{
+    border: 3px  solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color : aqua;
+
+}
+th{
+    border: 1px  solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color : aqua;
+
+}
+
+
+tr:nth-child(odd){
+    background-color: pink;
+}
+tr:nth-child(even){
+    background-color: aqua;
+}
+
+#two{
+    font-family: Georgia, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    color :blue ;
+}
+
+td ,th{
+    border: 3px  solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color : AQUA;
+
+}
+th{
+    border:  1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color : AQUA;
+
+}
+
+
+tr:nth-child(odd){
+    background-color: AQUA;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+
+#one {
+    height: 1000px;
+    width: 50%;
+    background-color: powderblue;
+    
+text-align: center;
+margin : auto;
+overflow : auto; 
+left : 0px;
+}
+
+#two {
+
+ background-color: lightgrey;
+    width: 1000px;
+    border: 25px solid grey;
+    padding: 25px;
+    margin: auto;
+    overflow : auto;
+text-align: center;
+
+}
+#three {
+    height: 200px;
+    width: 50%;
+    background-color: powderblue;
+    
+text-align: center;
+margin : auto;
+overflow : auto; 
+}
+
+body {
+    background-image: url("bgpoker.jpg");
+}
