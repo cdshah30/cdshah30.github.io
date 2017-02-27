@@ -1,0 +1,81 @@
+
+
+
+<?php
+date_default_timezone_set("America/New_York");
+
+?> 
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+      <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+
+
+
+<link href="assign4style.css" rel="stylesheet" type="text/css" />
+
+<title>Part2</title>
+</head>
+
+<body><?php 
+$timestamp = time();
+#$date_default_timezone_set('America/Los Angeles');
+$weekday = date("D",$timestamp);
+$month = date("F",$timestamp);
+$day = date("d",$timestamp);
+$year = date("Y",$timestamp);
+$hour = date("h",$timestamp);
+$minute = date("i",$timestamp);
+$ampm = date("a", $timestamp);
+ 
+
+echo ("<h1>Today's Time And Date <br></br>" . $weekday . "," . $month . "," . $day . "," . $year . "," . $hour . ":" . $minute . $ampm . "</h1>");
+?> 
+ <?php
+
+function get_hour_string($timestamp) {
+	$h = date("h", $timestamp);
+	$a_or_p = date("a", $timestamp);
+	$h = "$h.00" . "$a_or_p"; 
+	return $h;
+}
+
+$hours_to_show = 12;
+
+
+echo "<table id='event_table'>
+	<tr>
+		<th class='hr_td_'></th> <th class='table_header'>Next 12 Hours</th><th class='table_header'></th><th class='table_header'></th>
+	</tr>";
+
+for ($i=0; $i<$hours_to_show; $i++)
+{
+	if ($i%2==0)
+	{
+		echo "<tr class='even_row'>
+		<td class='hr_td'>" . get_hour_string($timestamp) . "</td> <td></td><td></td><td></td>
+		</tr>";
+	}
+	else if ($i%2!=0)
+	{
+		echo "<tr class='odd_row'>
+		<td class='hr_td'>" . get_hour_string($timestamp) . "</td> <td> </td> <td> </td> <td> </td>
+		</tr>";
+	}
+	
+	$timestamp += 3600; // move timestamp forward by 1 hour
+	
+}
+	
+	
+echo "</table>";
+	
+?>
+<p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+  </p>
+
+</body>
+</html>
