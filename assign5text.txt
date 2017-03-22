@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>
+Assignment-5
+</title>
+<body>
+<script>
+function showMsg1(){
+
+
+
+if(document.getElementById("userInput2").value == "" )
+{
+var elem= document.getElementById('userMsg2');
+elem.style.color="Red";
+  elem.style.textDecoration = "underline";
+     document.getElementById('userMsg2').textContent ="FirstName is missing";
+
+
+}
+
+if(document.getElementById("userInput1").value == "")
+{
+var elem= document.getElementById('userMsg1');
+elem.style.color="Red";
+  elem.style.textDecoration = "underline";
+     document.getElementById('userMsg1').textContent ="ID is Missing";
+}
+if(document.getElementById("userInput3").value == "")
+{
+var elem= document.getElementById('userMsg3');
+elem.style.color="Red";
+elem.style.textDecoration = "underline";
+     document.getElementById('userMsg3').textContent ="Lastname is Missing";
+}
+
+
+if(document.getElementById("userInput1").value == "" &&  document.getElementById("userInput2").value == "" && document.getElementById("userInput3").value !=0)
+{
+    alert("ID & FirstName Missing");
+}
+
+if(document.getElementById("userInput1").value == "" &&  document.getElementById("userInput2").value == "" && document.getElementById("userInput3").value == "" )
+{
+    alert("ID ,FirstName & LastName Missing");
+}
+
+ 
+if(document.getElementById("userInput1").value !=0 &&  document.getElementById("userInput2").value == "" && document.getElementById("userInput3").value == "" )
+{
+    alert("FirstName & LastName Missing");
+}
+
+
+if(document.getElementById("userInput1").value == "" &&  document.getElementById("userInput2").value !=0 && document.getElementById("userInput3").value == "" )
+{
+    alert("ID  & LastName Missing");
+}
+
+if(document.getElementById("userInput1").value == "" &&  document.getElementById("userInput2").value !=0 && document.getElementById("userInput3").value !=0 )
+{
+    alert("ID  Missing");
+}
+if(document.getElementById("userInput1").value !=0 &&  document.getElementById("userInput2").value == "" && document.getElementById("userInput3").value !=0 )
+{
+    alert("FirstName  Missing");
+}
+
+if(document.getElementById("userInput1").value !=0 &&  document.getElementById("userInput2").value !=0 && document.getElementById("userInput3").value == "" )
+{
+    alert(" LastName Missing");
+}
+if(document.getElementById("userInput1").value !="" &&  document.getElementById("userInput2").value !=""  && document.getElementById("userInput3").value !="")
+{
+
+var userInput11=document.getElementById("userInput1").value;
+var userInput22=document.getElementById("userInput2").value;
+var userInput33=document.getElementById("userInput3").value;
+
+document.getElementById("hello").reset();
+    document.getElementById('userMsg').textContent ="First Name is  " + userInput22;
+ document.getElementById('userMsg4').textContent ="Last Name is  " + userInput33;
+ document.getElementById('userMsg5').textContent ="ID is  " + userInput11;
+
+}
+
+ 
+
+
+}
+</script>
+<form id=hello>
+<p id="userMsg1"></p>
+ID
+<input type="input" maxlength="40" id="userInput1"  >
+
+
+<p id="userMsg2"></p>
+First Name
+<input type="input" maxlength="40" id="userInput2" >
+
+<p id="userMsg3"></p>
+Last Name
+<input type="input" maxlength="40" id="userInput3" >
+<input type=button value=Add onclick="showMsg1()">
+
+    </form>
+
+<p id="userMsg"></p>
+<p id="userMsg4"></p>
+<p id="userMsg5"></p>
+</body>
+</html>
