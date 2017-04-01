@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type = "text/css" href = "../CSS/styleproject.css">
+<link rel="stylesheet" type = "text/css" href = "../CSS/question.css">
+
+<script type="text/javascript" src="PartC.js">
+</script>
+</head>
+<body>
+<h1 id="time"></h1>
+<div id="myBoard">
+<h1> Jurrassic Park Game </h1>
+</div>
+<div id="tileButtons">
+<h2 id="tiles">Choose the number of pairs of Dinausor pictures to be displayed: </h2>
+<button onclick="tileNumbers(16)"> 8 pictures </button>
+<button onclick="tileNumbers(20)"> 10 pictures </button>
+<button onclick="tileNumbers(24)"> 12 pictures </button><br style="clear: left;" />
+</div>
+<div id="timerButtons">
+<h2 id="seconds">Choose the level of difficulty:</h2>
+<button onclick="setSeconds(3)">3 seconds</button>
+<button onclick="setSeconds(5)">5 seconds</button>
+<button  onclick="setSeconds(8)">8 seconds</button><br style="clear: left;" />
+</div>
+
+<div id="optionButtons">
+<h2 id="options">Options</h2>
+<button onclick="go()"> Go! </button> <button onclick="restart()">Restart </button>
+</div>
+<br/><br/><br/>
+<div id="rule">
+<h2 id="not_normal">Rules to Play The Game</h2>
+<p>First, the player selects the number of different dinausor pictures in the game, and the number of seconds the board will be visible before the tiles are hidden.</p>
+<p>Then, the player clicks on tiles in hopes of uncovering dinausor pairs.  Pairs will remain visible, tiles that do not match will be hidden again.</p>
+<p>The player has a time limit that depends on the size of the game.</p>
+</div>
+<br/>
+
+</body>
+</html>
+
